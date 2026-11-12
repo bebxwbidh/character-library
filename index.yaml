@@ -5,7 +5,7 @@ updated: 2026-11-09
 count: 24
 characters:
   - id: C01
-    file: characters/C01/char.jpg
+    file: characters/女生/C01/char.jpg
     thumb: thumbs/C01.jpg
     source: "ChatGPT Image Aug 25, 2026, 07_56_21 PM.png"
     gender: 女
@@ -21,7 +21,7 @@ characters:
     anchor: B
     note: "全身可见身形比例，适合当锚点底图"
   - id: C02
-    file: characters/C02/char.jpg
+    file: characters/女生/C02/char.jpg
     thumb: thumbs/C02.jpg
     source: "Codex 图像 2026年9月10日 12_54_09.png"
     gender: 女
@@ -38,7 +38,7 @@ characters:
     anchor: A
     note: "清冷御姐脸"
   - id: C03
-    file: characters/C03/char.jpg
+    file: characters/女生/C03/char.jpg
     thumb: thumbs/C03.jpg
     source: "Codex 图像 2026年9月10日 12_54_32.png"
     gender: 女
@@ -55,7 +55,7 @@ characters:
     anchor: A
     note: "与C02同人连拍，角度稍侧"
   - id: C04
-    file: characters/C04/char.jpg
+    file: characters/男生/C04/char.jpg
     thumb: thumbs/C04.jpg
     source: "Codex 图像 2026年9月10日 12_54_57.png"
     gender: 男
@@ -71,7 +71,7 @@ characters:
     anchor: A
     note: "少年感清秀脸"
   - id: C05
-    file: characters/C05/char.jpg
+    file: characters/女生/C05/char.jpg
     thumb: thumbs/C05.jpg
     source: "Codex 图像 2026年9月10日 13_04_35.png"
     gender: 女
@@ -87,7 +87,7 @@ characters:
     anchor: A
     note: "温婉圆脸"
   - id: C06
-    file: characters/C06/char.jpg
+    file: characters/女生/C06/char.jpg
     thumb: thumbs/C06.jpg
     source: "Codex 图像 2026年9月10日 13_23_31.png"
     gender: 女
@@ -103,7 +103,7 @@ characters:
     anchor: A
     note: "颧骨立体冷脸"
   - id: C07
-    file: characters/C07/char.jpg
+    file: characters/女生/C07/char.jpg
     thumb: thumbs/C07.jpg
     source: "Codex 图像 2026年9月13日 14_06_57.png"
     gender: 女
@@ -119,7 +119,7 @@ characters:
     anchor: A
     note: "甜妹脸"
   - id: C08
-    file: characters/C08/char.jpg
+    file: characters/男生/C08/char.jpg
     thumb: thumbs/C08.jpg
     source: "Codex 图像 2026年9月13日 14_24_30.png"
     gender: 男
@@ -135,7 +135,7 @@ characters:
     anchor: A
     note: "浓眉方脸英气"
   - id: C09
-    file: characters/C09/char.jpg
+    file: characters/男生/C09/char.jpg
     thumb: thumbs/C09.jpg
     source: "Codex 图像 2026年9月13日 14_28_17.png"
     gender: 男
@@ -151,7 +151,7 @@ characters:
     anchor: A
     note: "邻家少年脸"
   - id: C10
-    file: characters/C10/char.jpg
+    file: characters/女生/C10/char.jpg
     thumb: thumbs/C10.jpg
     source: "Codex 图像 2026年9月13日 14_39_52.png"
     gender: 女
@@ -167,7 +167,7 @@ characters:
     anchor: A
     note: "短发精灵感"
   - id: C11
-    file: characters/C11/char.jpg
+    file: characters/女生/C11/char.jpg
     thumb: thumbs/C11.jpg
     source: "Codex 图像 2026年9月13日 15_08_19.png"
     gender: 女
@@ -183,7 +183,7 @@ characters:
     anchor: A
     note: "桃花眼圆脸"
   - id: C12
-    file: characters/C12/char.jpg
+    file: characters/男生/C12/char.jpg
     thumb: thumbs/C12.jpg
     source: "Codex 图像 2026年9月13日 15_16_05.png"
     gender: 男
@@ -199,7 +199,7 @@ characters:
     anchor: A
     note: "剑眉薄唇俊朗"
   - id: C13
-    file: characters/C13/char.jpg
+    file: characters/男生/C13/char.jpg
     thumb: thumbs/C13.jpg
     source: "Codex 图像 2026年9月13日 15_24_33.png"
     gender: 男
@@ -215,7 +215,7 @@ characters:
     anchor: A
     note: "硬朗成熟脸"
   - id: C14
-    file: characters/C14/char.jpg
+    file: characters/女生/C14/char.jpg
     thumb: thumbs/C14.jpg
     source: "Codex 图像 2026年9月13日 15_36_17.png"
     gender: 女
@@ -231,7 +231,7 @@ characters:
     anchor: A
     note: "古典温婉脸"
   - id: C15
-    file: characters/C15/char.jpg
+    file: characters/男生/C15/char.jpg
     thumb: thumbs/C15.jpg
     source: "Codex 图像 2026年9月6日 15_53_31.png"
     gender: 男
@@ -247,7 +247,7 @@ characters:
     anchor: A
     note: "浓颜系男主角脸"
   - id: C16
-    file: characters/C16/char.jpg
+    file: characters/女生/C16/char.jpg
     thumb: thumbs/C16.jpg
     source: "图片节点 1.png"
     gender: 女
@@ -263,7 +263,7 @@ characters:
     anchor: A
     note: "中式新娘定妆，妆造参考佳品"
   - id: C17
-    file: characters/C17/char.jpg
+    file: characters/女生/C17/char.jpg
     thumb: thumbs/C17.jpg
     source: "室内柔光下的静谧人像.png"
     gender: 女
@@ -279,7 +279,7 @@ characters:
     anchor: A
     note: "静谧氛围人像"
   - id: C18
-    file: characters/C18/char.jpg
+    file: characters/女生/C18/char.jpg
     thumb: thumbs/C18.jpg
     source: "新娘正面定妆照-1.png"
     gender: 女
@@ -296,7 +296,7 @@ characters:
     anchor: B
     note: "西式新娘定妆半身"
   - id: C19
-    file: characters/C19/char.jpg
+    file: characters/女生/C19/char.jpg
     thumb: thumbs/C19.jpg
     source: "新娘正面定妆照-2.png"
     gender: 女
@@ -313,7 +313,7 @@ characters:
     anchor: A
     note: "与C18同人，脸更近"
   - id: C20
-    file: characters/C20/char.jpg
+    file: characters/女生/C20/char.jpg
     thumb: thumbs/C20.jpg
     source: "柔光下的赤褐发少女肖像.png"
     gender: 女
@@ -329,7 +329,7 @@ characters:
     anchor: A
     note: "红棕发异色系"
   - id: C21
-    file: characters/C21/char.jpg
+    file: characters/女生/C21/char.jpg
     thumb: thumbs/C21.jpg
     source: "清冷职场风东亚女性肖像.png"
     gender: 女
@@ -345,7 +345,7 @@ characters:
     anchor: A
     note: "清冷职场风"
   - id: C22
-    file: characters/C22/char.jpg
+    file: characters/女生/C22/char.jpg
     thumb: thumbs/C22.jpg
     source: "温柔凝视的自然肖像.png"
     gender: 女
@@ -361,7 +361,7 @@ characters:
     anchor: A
     note: "2026-11-08 套系女锚点原始素材"
   - id: C23
-    file: characters/C23/char.jpg
+    file: characters/女生/C23/char.jpg
     thumb: thumbs/C23.jpg
     source: "自然暖光下的亚洲女性肖像.png"
     gender: 女
@@ -377,7 +377,7 @@ characters:
     anchor: A
     note: "暖调自然光人像"
   - id: C24
-    file: characters/C24/char.jpg
+    file: characters/女生/C24/char.jpg
     thumb: thumbs/C24.jpg
     source: "静谧凝视的东方少女肖像.png"
     gender: 女

@@ -3,7 +3,7 @@
 婚纱套图 skill 的人物素材库，与 `scene-library`（场景库）配套。
 
 - `index.yaml` — 24 条索引：性别/景别/发型/妆造/光源/同人组/人脸像素/锚点等级
-- `characters/<id>/char.jpg` — 2048px 压缩版（生图参考用）
+- `characters/<性别目录>/<id>/char.jpg` — 2048px 压缩版（生图参考用）
 - `thumbs/<id>.jpg` — 480px 缩略图（目检挑人用）
 - `matching-rules.md` — 使用规则（来源裁决、锚点等级、同人组、男女配对）
 - `build_index.py` — 建库脚本（压缩 + facexlib 人脸检测 + 索引生成）
