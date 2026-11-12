@@ -5,7 +5,7 @@
 
 功能：
     1. 扫描源目录（默认 D:/人物资产）的图片（png/jpg）
-    2. 按 2026-11-09 建库定规压缩：characters/<性别目录>/<id>/char.jpg 长边2048 q90（生图参考够用），
+    2. 按 2026-11-09 建库定规压缩：characters/<性别目录>/<id>.jpg 长边2048 q90（生图参考够用），
        thumbs/<id>.jpg 长边480 q85（目检/挑人用）；4K+ 原图留源目录当母版，不入库
     3. facexlib 自动检测人脸：数量、最大脸像素、置信度、画面位置 → 换算锚点等级
        A=最大脸高≥600px 可直接当生图锚点；B=300~599 可用（建议配合修复）；
@@ -118,7 +118,7 @@ def main():
         cid = f"C{i:02d}"
         lab = LABELS.get(cid, {})
         gender = lab.get("gender")
-        char = CHAR_DIR / f"{gender}生" / cid / "char.jpg" if gender in ("男", "女") else CHAR_DIR / cid / "char.jpg"
+        char = CHAR_DIR / f"{gender}生" / f"{cid}.jpg" if gender in ("男", "女") else CHAR_DIR / cid / "char.jpg"
         thumb = THUMB_DIR / f"{cid}.jpg"
         size_c = compress(src / f, char, 2048, 90)
         compress(src / f, thumb, 480, 85)
