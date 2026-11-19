@@ -26,32 +26,22 @@ CHAR_DIR = LIB / "characters"
 THUMB_DIR = LIB / "thumbs"
 
 # ---- 人工语义标注（按需增改，id 按源文件名排序 C01 起）----
-# gender/shot/hair/outfit/light/group/note；group=同人组（同组任选其一即可，脸一致）
+# gender/shot/hair/outfit/light/group/note/stype；group=同人组（同组任选其一即可，脸一致）
+# stype = 质感来源：AI生成（模型生图，会外溢 CG 质感与棚拍妆面，case-2026-11-18-06）| 实拍
+#         交付严质感批优先选「实拍」锚点；缺省视为 AI生成
 LABELS = {
-    "C01": dict(gender="女", shot="半身站姿", hair="黑长直", outfit="黑色圆领T恤居家装", light="室内窗光", group="", note="全身可见身形比例，适合当锚点底图"),
-    "C02": dict(gender="女", shot="面部特写", hair="黑长直中分", outfit="露肩白衫", light="柔光棚拍", group="g-f01", note="清冷御姐脸"),
-    "C03": dict(gender="女", shot="面部特写", hair="黑长直中分", outfit="白色上衣", light="柔光棚拍", group="g-f01", note="与C02同人连拍，角度稍侧"),
-    "C04": dict(gender="男", shot="面部特写", hair="黑色碎盖短发", outfit="深色上衣", light="柔光棚拍", group="", note="少年感清秀脸"),
-    "C05": dict(gender="女", shot="面部特写", hair="黑长发低马尾", outfit="浅色上衣", light="柔光棚拍", group="", note="温婉圆脸"),
-    "C06": dict(gender="女", shot="面部特写", hair="黑长直", outfit="深色上衣", light="柔光棚拍", group="", note="颧骨立体冷脸"),
-    "C07": dict(gender="女", shot="面部特写", hair="黑长发空气刘海", outfit="浅色上衣", light="柔光棚拍", group="", note="甜妹脸"),
-    "C08": dict(gender="男", shot="面部特写", hair="黑色短发", outfit="深色上衣", light="柔光棚拍", group="", note="浓眉方脸英气"),
-    "C09": dict(gender="男", shot="面部特写", hair="碎盖短发", outfit="灰绿色上衣", light="柔光棚拍", group="", note="邻家少年脸"),
-    "C10": dict(gender="女", shot="面部特写", hair="黑色波波头短发", outfit="白色上衣", light="柔光棚拍", group="", note="短发精灵感"),
-    "C11": dict(gender="女", shot="面部特写", hair="黑长发", outfit="浅色上衣", light="柔光棚拍", group="", note="桃花眼圆脸"),
-    "C12": dict(gender="男", shot="面部特写", hair="黑色短碎发", outfit="深色上衣", light="柔光棚拍", group="", note="剑眉薄唇俊朗"),
-    "C13": dict(gender="男", shot="面部特写", hair="寸头/短背头", outfit="深色上衣", light="柔光棚拍", group="", note="硬朗成熟脸"),
-    "C14": dict(gender="女", shot="面部特写", hair="黑长发中分", outfit="浅色上衣", light="柔光棚拍", group="", note="古典温婉脸"),
-    "C15": dict(gender="男", shot="面部特写", hair="黑色短发", outfit="白衬衫", light="柔光棚拍", group="", note="浓颜系男主角脸"),
-    "C16": dict(gender="女", shot="正面定妆半身", hair="中式双花苞头+头饰", outfit="新娘妆造（中式）", light="柔和影棚光", group="", note="中式新娘定妆，妆造参考佳品"),
-    "C17": dict(gender="女", shot="半身人像", hair="黑长发", outfit="深色上衣", light="室内柔光暗背景", group="", note="静谧氛围人像"),
-    "C18": dict(gender="女", shot="白纱新娘半身", hair="盘发+白纱头纱", outfit="白色婚纱", light="柔光影棚", group="g-bride1", note="西式新娘定妆半身"),
-    "C19": dict(gender="女", shot="白纱新娘特写", hair="盘发+白纱头纱", outfit="白色婚纱", light="柔光影棚", group="g-bride1", note="与C18同人，脸更近"),
-    "C20": dict(gender="女", shot="面部特写", hair="赤褐发长卷发", outfit="深色上衣", light="柔光棚拍", group="", note="红棕发异色系"),
-    "C21": dict(gender="女", shot="半身人像", hair="黑长发", outfit="白衬衫+深色西装职场装", light="室内自然光", group="", note="清冷职场风"),
-    "C22": dict(gender="女", shot="面部特写", hair="黑长发", outfit="浅色上衣", light="自然暖光", group="", note="2026-11-08 套系女锚点原始素材"),
-    "C23": dict(gender="女", shot="面部特写", hair="黑长发", outfit="深色上衣", light="自然暖光", group="", note="暖调自然光人像"),
-    "C24": dict(gender="女", shot="面部特写", hair="黑长发", outfit="深色上衣", light="冷调自然光", group="", note="冷调东方少女脸"),
+    "C01": dict(gender="男", shot="四视图定妆板", hair="黑发背头", outfit="白色双排扣礼服+白领结+刺绣白裤+白皮鞋", light="灰底棚拍", group="", note="黑裤白鞋正式新郎造型（四视图板，单脸约 380px，未检测）", stype="AI生成"),
+    "C02": dict(gender="女", shot="四视图定妆板", hair="黑长直半扎发", outfit="白色一字肩蕾丝鱼尾婚纱+长头纱", light="灰底棚拍", group="", note="白纱新娘定妆，含背面蝴蝶结（四视图板，单脸约 380px，未检测）", stype="AI生成"),
+    "C03": dict(gender="女", shot="四视图定妆板", hair="棕长卷发", outfit="黑色蕾丝胸衣连衣短裙+黑丝吊袜带+黑高跟", light="灰底棚拍", group="", note="私房/夜宴风，注意公库可见（四视图板，单脸约 330px，未检测）", stype="AI生成"),
+    "C04": dict(gender="男", shot="四视图定妆板", hair="黑色短发", outfit="白色燕尾礼服+粉格纹领带+胸花", light="灰底棚拍", group="", note="白燕尾新郎造型，长款外套（四视图板，单脸约 330px，未检测）", stype="AI生成"),
+    "C05": dict(gender="男", shot="四视图定妆板", hair="黑色短发", outfit="黑色双排扣西装+黑衬衫+黑领结", light="灰底棚拍", group="", note="全黑礼服，硬朗新郎（四视图板，单脸约 330px，未检测）", stype="AI生成"),
+    "C06": dict(gender="女", shot="四视图定妆板", hair="黑棕披发+缎带发饰", outfit="黑色吊带伞裙+白蕾丝裙边+蕾丝袜+玛丽珍鞋", light="灰底棚拍", group="", note="复古少女/哥特风（四视图板，单脸约 330px，未检测）", stype="AI生成"),
+    "C07": dict(gender="女", shot="四视图定妆板", hair="黑长直", outfit="白色抹胸不规则荷叶边长裙", light="灰底棚拍", group="", note="轻婚纱/晚宴白裙（四视图板，单脸约 330px，未检测）", stype="AI生成"),
+    "C08": dict(gender="男", shot="四视图定妆板", hair="黑色长发马尾+胡须", outfit="黑色三件套礼服+黑领结", light="灰底棚拍", group="", note="长发胡须气质，艺术感新郎（四视图板，单脸约 330px，未检测）", stype="AI生成"),
+    "C09": dict(gender="女", shot="四视图定妆板", hair="黑色盘发", outfit="白色薄纱披肩婚纱+水晶皇冠+珍珠耳坠", light="灰底棚拍", group="", note="皇冠造型，薄纱披肩（四视图板，单脸约 330px，未检测）", stype="AI生成"),
+    "C10": dict(gender="女", shot="四视图定妆板", hair="棕色盘发", outfit="白色立体玫瑰短裙+白色高跟鞋", light="灰底棚拍", group="", note="立体玫瑰短裙，俏皮新娘（四视图板，单脸约 330px，未检测）", stype="AI生成"),
+    "C11": dict(gender="女", shot="四视图定妆板", hair="黑色盘发", outfit="白色缎面一字肩蓬蓬裙+头纱+金色大耳环", light="灰底棚拍", group="", note="缎面蓬裙，复古新娘（四视图板，单脸约 330px，未检测）", stype="AI生成"),
+    "C12": dict(gender="女", shot="四视图定妆板", hair="黑长微卷+墨绿针织帽", outfit="棕格纹衬衫+白内搭+黑阔腿裤+绿针织帽", light="灰底棚拍", group="", note="休闲复古，日常感造型（四视图板，单脸约 330px，未检测）", stype="AI生成"),
 }
 
 
@@ -135,7 +125,7 @@ def main():
         entries.append(dict(
             id=cid, file=char.relative_to(CHAR_DIR.parent).as_posix(), source=f, gender=lab.get("gender", "?"), shot=lab.get("shot", ""),
             hair=lab.get("hair", ""), outfit=lab.get("outfit", ""), light=lab.get("light", ""),
-            group=lab.get("group", ""), note=lab.get("note", ""),
+            group=lab.get("group", ""), note=lab.get("note", ""), source_type=lab.get("stype", "AI生成"),
             size=f"{size_c[0]}x{size_c[1]}", faces=n, face_hpx=hpx,
             face_conf=round(conf, 2), face_pos=f"x{rx} y{ry}" if rx is not None else "",
             anchor=grade,
@@ -145,8 +135,9 @@ def main():
     # 写 index.yaml
     lines = ["# 人物资产库索引（build_index.py 自动生成 + LABELS 人工标注）",
              "# anchor 等级：A=脸>=600px 可直接当锚点；B=300~599 可用；C=<300px 只作妆造/服装参考",
+             "# source_type：AI生成=模型生图（质感外溢风险，见 case-2026-11-18-06）| 实拍=真实照片；交付严质感批优先实拍锚点",
              "library: character-library",
-             f"updated: 2026-11-09",
+             f"updated: 2026-11-18",
              f"count: {len(entries)}",
              "characters:"]
     for e in entries:
@@ -154,6 +145,7 @@ def main():
         lines.append(f"    file: {e['file']}")
         lines.append(f"    thumb: thumbs/{e['id']}.jpg")
         lines.append(f"    source: \"{e['source']}\"")
+        lines.append(f"    source_type: {e['source_type']}")
         lines.append(f"    gender: {e['gender']}")
         lines.append(f"    shot: {e['shot']}")
         lines.append(f"    hair: {e['hair']}")
